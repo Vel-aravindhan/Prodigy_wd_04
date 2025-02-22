@@ -1,2 +1,2 @@
-# Prodigy_wd_04
-My personal portfolio website is a showcase of my skills and projects, built using HTML for structure, CSS for styling, and JavaScript for interactivity.
+# Personal portfolio
+My personal portfolio website is a showcase of my skills and projects, built using HTML for structure, CSS for styling, and JavaScript for interactivity. The HTML provides the foundation with sections for an introduction, about me, projects, and contact information. CSS is used extensively to create a visually appealing design, including layout, typography, color schemes, and responsiveness across different devices. JavaScript enhances the user experience with features like smooth scrolling, interactive project displays, and potentially a contact form with client-side validation. The portfolio is designed to be clean, modern, and easy to navigate, highlighting my abilities and providing potential employers or collaborators with a clear overview of my work.

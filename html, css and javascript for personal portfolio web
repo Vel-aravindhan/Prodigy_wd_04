@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+</style>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I love coding and learning new technologies. I can do lots of things! I am good at brainstorming ideas, clarifying tricky concepts, and tasks like recapping meetings and helping you research a topic.
+
+        </p>
+
+        <img src="https://tse1.mm.bing.net/th?id=OIP.GdPNzKVun1KzraiI2WCIYwHaLH&pid=Api&P=0&h=180">
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A navigation bar is a crucial element in any web application, providing users with a clear and organized way to explore different sections or pages. In my web application, the navigation bar is implemented using HTML for the structure, CSS for the styling, and JavaScript for any interactive behavior.</p>
+            <a href="#" class="button">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>The stopwatch feature in my web application is built using a combination of HTML, CSS, and JavaScript.  HTML provides the basic structure, including elements for displaying the time (minutes, seconds, milliseconds) and buttons for starting, stopping, and resetting the timer.  CSS styles these elements for a clean and readable presentation.</p>
+            <a href="#" class="button">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>My personal portfolio website is a showcase of my skills and projects, built using HTML for structure, CSS for styling, and JavaScript for interactivity.  The HTML provides the foundation with sections for an introduction, about me, projects, and contact information.  CSS is used extensively to create a visually appealing design, including layout, typography, color schemes, and responsiveness across different devices.</p>
+            <a href="#" class="button">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+</body>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the values from the form fields
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Simple validation
+    if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    // Here you can add code to send the form data to a server or an email service
+    // For demonstration, we'll just log the data to the console
+    console.log('Form submitted:', { name, email, message });
+
+    // Clear the form fields
+    document.getElementById('contact-form').reset();
+
+    // Provide feedback to the user
+    alert('Thank you for your message, ' + name + '! I will get back to you soon.');
+});
+    </script>
+
+</html>
